@@ -44,6 +44,7 @@ module.exports = class AtomWindow extends EventEmitter {
       show: false,
       title: getAppName(),
       tabbingIdentifier: 'atom',
+      transparent: true,
       webPreferences: {
         // Prevent specs from throttling when the window is in the background:
         // this should result in faster CI builds, and an improvement in the
